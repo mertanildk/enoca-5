@@ -45,6 +45,6 @@ public class CustomerController {
     }
     @GetMapping(value = "/getCustomersWithoutOrder", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<RestResponseEntity<List<Customer>>> getCustomersWithoutOrder() {
-        return ResponseEntity.ok(RestResponseEntity.response(customerService.findAllCustomerWithoutOrder() ));
+        return ResponseEntity.ok(RestResponseEntity.response(customerService.findAllCustomerWithoutOrder()));
     }
 }
